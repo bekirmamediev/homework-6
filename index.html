@@ -337,43 +337,56 @@
 
     <div data-modal  class="backdrop  is-hidden">
         <div class="modal">
+            
             <button data-modal-close class="modal-button">
                 <svg class="close-svg">
                     <use href="./images/symbol.svg#icon-close"></use>
                 </svg>
             </button>
 
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
             <form action="">
                 <div class="forms-field">
-                    <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
                     <label class="form-label" for="name">Ім'я</label>
+                    <input class="form-input" type="text" name="name" id="name" placeholder=" "/>
+                    <svg class="icon-form">
+                        <use href="./images/symbol.svg#icon-usersvg"></use>
+                    </svg>
                 </div>  
                 
                 <div class="forms-field">
-                    
-                    <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
                     <label class="form-label" for="tel">Телефон</label>
+                    <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " />
+                    <svg class="icon-form">
+                        <use href="./images/symbol.svg#icon-phone-form"></use>
+                    </svg>
                 </div> 
 
                 <div class="forms-field">
-                    
-                    <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
                     <label class="form-label" for="mail">Пошта</label>
-                </div>
-
-                <div class="forms-field">
+                    <input class="form-input" type="email" name="mail" id="mail" placeholder=" "/>
+                    <svg class="icon-form">
+                        <use href="./images/symbol.svg#icon-envelop"></use>
+                    </svg>
                     
-                    <textarea name="text-area" id="text-area" rows="10"></textarea>
-                    <label class="form-label" for="text-area">Коментар</label>
                 </div>
 
-                <div class="chekbox" >
-                    <input type="checkbox" name="polici" id="pollici">
-                    <label for="polici">Приймаю умови <a href="">договору</a></label>
+                <div class="forms-field comments">
+                    <label class="form-label" for="text-area">Коментар</label>
+                    <textarea class="comments-input" name="text-area" id="text-area" placeholder="Введіть текст"></textarea>
+                    
                 </div>
+
+                <label class="checkbox-div" for="polici">
+                    <input class="checkbox" type="checkbox" name="polici" id="polici" >
+                    <span class="checkbox-span"></span>
+                    <span class="polici-span">Погоджуюся з розсилкою та приймаю <a class="polici-link" href="">Умови договору</a></span>  
+                </label>
+                
                
                 
-                <button type="submit" class="modal-btm">Надіслати заявку</button>
+                <button type="submit" class="modal-btm">Відправити</button>
             </form>
         </div>
     </div>
