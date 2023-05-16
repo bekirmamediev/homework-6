@@ -802,11 +802,6 @@ border-bottom: 1px solid #ECECEC;
 
 }
 
-/* form{
-    outline: 1px solid tomato;
-    padding-left: 40px;
-    padding-right: 40px;
-} */
 
 .forms-field{
     position: relative;
@@ -871,14 +866,6 @@ border-bottom: 1px solid #ECECEC;
 
 }
 
-/* .form-input:placeholder-shown{
-    background-color: #2196F3;
-} */
-
-/* .form-input:not(:placeholder-shown) + .form-label,
-.form-input:focus + .form-label{
-    transform: translateY(-40px);
-} */
 
 .comments {
     height: 120px;
@@ -988,6 +975,8 @@ border-bottom: 1px solid #ECECEC;
     line-height: 1.875;
     
 }
+
+/* footer subscribe*/
 
 .footer-form {
     display: flex;
