@@ -547,9 +547,13 @@ border-bottom: 1px solid #ECECEC;
     align-items: baseline;
 }
 
-.footer-content:not(:last-child) {
+/* .footer-content:not(:last-child) {
     margin-right: 70px;
 
+} */
+
+.footer-content{
+    margin-right: 70px;
 }
 
 .address-block {
@@ -850,6 +854,9 @@ border-bottom: 1px solid #ECECEC;
     fill: var(--accent-color);
 }
 
+.form-input:focus .form-input{
+    border: 1px solid var(--accent-color);
+}
 
 
 .form-label{
@@ -922,25 +929,27 @@ border-bottom: 1px solid #ECECEC;
     
 }
 
-.polici-span{
-    text-align: center;
-    /* display: inline-block;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto; */
-    
+.icon-check{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 15px;
+
+    border-radius: 4px;
+    background-color: #2196F3;
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox:checked + .checkbox-span{
-    background-color: #2196F3;
-    background-image: url(../images/icon-check.svg);
-    background-repeat: no-repeat;
-    
-    background-size: contain;
-    border-color: #2196F3;
-    background-origin: content-box;
-    
+.checkbox:checked ~ .icon-check{
+    opacity: 1;
 }
+
 
 .checkbox{
     position: absolute;
@@ -972,6 +981,75 @@ border-bottom: 1px solid #ECECEC;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
     
 }
 
+.footer-form {
+    display: flex;
+    align-items: flex-end;
+
+    margin-left: auto;
+}
+
+.footer-ff {
+    width: 358px;
+    margin-right: 40px;
+}
+
+.footer-input {
+    width: 100%;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.footer-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-label:focus{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btm-relative{
+    position: relative;
+}
+
+.footer-btm{
+    margin-top: 0;
+    margin-bottom: 0;
+
+    padding-left: 28px;
+
+    text-align: left;
+
+}
+
+.icon-footerbtm{
+    position: absolute;
+    top: 50%;
+    right: 28px;
+
+    transform: translateY(-50%);
+
+    width: 24px;
+    height: 24px;
+}
