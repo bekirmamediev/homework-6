@@ -833,6 +833,8 @@ border-bottom: 1px solid #ECECEC;
     height: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    outline: none;
     
     
 }  
@@ -854,7 +856,7 @@ border-bottom: 1px solid #ECECEC;
     fill: var(--accent-color);
 }
 
-.form-input:focus .form-input{
+.form-input:focus{
     border: 1px solid var(--accent-color);
 }
 
