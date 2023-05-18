@@ -901,6 +901,7 @@ border-bottom: 1px solid #ECECEC;
 
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 30px;
     display: block;
     text-align: center;
 
@@ -972,7 +973,6 @@ border-bottom: 1px solid #ECECEC;
     width: 200px;
     height: 50px;
 
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 
@@ -1037,11 +1037,8 @@ border-bottom: 1px solid #ECECEC;
 
 .footer-btm{
     position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-
+    
     padding-left: 28px;
-
     text-align: left;
 
 }
